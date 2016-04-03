@@ -1,4 +1,5 @@
-/* Takes a string and exclaims it.
+/**
+ * Takes a string and exclaims it.
  * @param {string} any old string
  * @returns {string} string with an exclamation point
  * @example
