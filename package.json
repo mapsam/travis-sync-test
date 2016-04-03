@@ -1,0 +1,22 @@
+{
+  "name": "travis-sync-test",
+  "version": "1.0.0",
+  "description": "update here, update there",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mapsam/travis-sync-test.git"
+  },
+  "author": "mapsam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapsam/travis-sync-test/issues"
+  },
+  "homepage": "https://github.com/mapsam/travis-sync-test",
+  "devDependencies": {
+    "tape": "^4.5.1"
+  }
+}
