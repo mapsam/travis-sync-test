@@ -1,0 +1,21 @@
+#!/bin/bash
+
+trigger_downstream() {
+  body="{
+      \"request\": {
+        \"message\": \"Triggered documentation builds: Travis Sync\",
+        \"branch\":\"master\"
+      }
+  }
+  "
+
+  curl -s -X POST \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json" \
+    -H "Travis-API-Version: 3" \
+    -H "Authorization: token 0b9uGEK89i3qCSql9J1PAg" \
+    -d "{message: 'HELLO WORLD!'}" \
+    https://api.travis-ci.org/repo/mapsam%2Ftravis-sink/requests
+}
+
+trigger_downstream
